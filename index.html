@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!--right brained vs left brained -->
+  <h1>Personality Predictor</h1>
+
+  <div id="warningText">Once you choose, the question will disappear and you cannot change your answer! So pick wisely...</div>
+
+  <div class="question_container" id="Q1"><!--the full question card-->
+    <h2>How do you structure your day?</h2>
+    <div class = "choices_container"><!--the div that contains both answer choices -- the answer choices are in flexbox with each other-->
+      <div onclick='counter(this,0)' class="boxDiv boxDiv1" id="q1a1"><!--this will organize, by using flex-direction: column;, the actual each answer choice. so pic on top, caption on bottom-->
+        <img src="scheduling.jpeg">
+        <p class="caption">I always follow my schedule to the minute!</p>
+        </div>
+      <div onclick='counter(this,1)' class="boxDiv boxDiv1" id="q1a2">
+        <img src="chilling.webp">
+        <p class="caption">I do whatever I feel like doing at the moment!</p>
+      </div>
+    </div> 
+  </div>
+
+  <div class="question_container" id="Q2"><!--the full question card-->
+    <h2>Which job would you rather have?</h2>
+    <div class = "choices_container"><!--the div that contains both answer choices -- the answer choices are in flexbox with each other-->
+      <div onclick='counterA("Q2")' class="boxDiv boxDiv2"><!--this will organize, by using flex-direction: column;, the actual each answer choice. so pic on top, caption on bottom-->
+        <img src="9to5.jpeg">
+        <p class="caption">9-5 tech job</p>
+        </div>
+      <div onclick='counterB("Q2")' class="boxDiv boxDiv2">
+        <img src="freelance.jpeg">
+        <p class="caption">Freelance artist</p>
+      </div>
+    </div> 
+  </div>
+
+  <div class="question_container" id="Q3"><!--the full question card-->
+    <h2>Which would you prefer?</h2>
+    <div class = "choices_container"><!--the div that contains both answer choices -- the answer choices are in flexbox with each other-->
+      <div onclick='counterA("Q3")' class="boxDiv boxDiv3"><!--this will organize, by using flex-direction: column;, the actual each answer choice. so pic on top, caption on bottom-->
+        <img src="stress.webp">
+        <p class="caption">Job I hate, but it's incredibly high pay</p>
+        </div>
+      <div onclick='counterB("Q3")' class="boxDiv boxDiv3">
+        <img src="dream.jpeg">
+        <p class="caption">Dream job, but I don't make any money</p>
+      </div>
+    </div> 
+  </div>
+
+  <div class="question_container" id="Q4"><!--the full question card-->
+    <h2>Do you work better alone or in a group?</h2>
+    <div class = "choices_container"><!--the div that contains both answer choices -- the answer choices are in flexbox with each other-->
+      <div onclick='counterA("Q4")' class="boxDiv boxDiv4"><!--this will organize, by using flex-direction: column;, the actual each answer choice. so pic on top, caption on bottom-->
+        <img src="workalone.jpeg">
+        <p class="caption">Alone!</p>
+        </div>
+      <div onclick='counterB("Q4")' class="boxDiv boxDiv4">
+        <img src="groupwork.jpeg">
+        <p class="caption">In a group!</p>
+      </div>
+    </div> 
+  </div>
+
+  <div class="question_container" id="Q5"><!--the full question card-->
+    <h2>You just got the chance to make any wish. What will you choose?</h2>
+    <div class = "choices_container"><!--the div that contains both answer choices -- the answer choices are in flexbox with each other-->
+      <div onclick='counterA("Q5")' class="boxDiv boxDiv5"><!--this will organize, by using flex-direction: column;, the actual each answer choice. so pic on top, caption on bottom-->
+        <img src="richFamous.jpeg">
+        <p class="caption">Success and fame!</p>
+        </div>
+      <div onclick='counterB("Q5")' class="boxDiv boxDiv5">
+        <img src="joy.jpeg">
+        <p class="caption">Love and joy!</p>
+      </div>
+    </div> 
+  </div>
+
+  <div id="summary" onclick="giveSummary()">
+    <p id="summaryText">Your summary: </p>
+  </div>
+
+  <div id="reset" onclick="reset()">
+    <p>Reset</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

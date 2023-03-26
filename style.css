@@ -1,0 +1,177 @@
+
+*{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-radius: 20px;
+}
+
+p{
+  font-size: 22px;
+}
+
+body{
+  text-align: center;
+  background-color: #e0e0ff;
+}
+img {
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+  margin-bottom: 5px;
+  border: 5px solid white;
+}
+
+#warningText{
+  background-color: rosybrown;
+  color: white;
+  border: 5px solid white;
+  padding: 10px;
+  margin-left: 100px;
+  margin-right: 100px; 
+  font-size: 22px;
+}
+
+h1{
+  background-color: #999999;
+  color: white;
+  border: 5px solid white;
+  padding: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.question_container{
+  border: 5px solid white;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 30px;
+  margin-right: 100px;
+  margin-left: 100px;
+  overflow: hidden;
+}
+
+.question_container.hidden{
+  animation: disappear 0.3s forwards;
+}
+
+#Q1{
+  background-color: #b79f85;
+  color: white;
+}
+
+#Q2{
+  background-color: #b79f85;
+  color: white;
+}
+
+#Q3{
+  background-color: #b79f85;
+  color: white;
+}
+
+#Q4{
+  background-color: #b79f85;
+  color: white;
+}
+
+#Q5{
+  background-color: #b79f85;
+  color: white;
+}
+
+.choices_container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 50px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.caption{
+  margin: 15px;
+}
+
+.boxDiv1{
+  border: 5px solid white;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #999999;
+}
+
+.boxDiv:hover{
+  background-color: #636363;
+}
+
+.boxDiv2{
+  border: 5px solid white;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #999999;
+}
+
+.boxDiv3{
+  border: 5px solid white;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #999999;
+}
+
+.boxDiv4{
+  border: 5px solid white;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #999999;
+}
+
+.boxDiv5{
+  border: 5px solid white;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #999999;
+}
+
+#summary{
+  margin: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  background-color: lightslategray;
+  border: 5px solid white;
+  cursor: pointer;
+  padding: 10px;
+  color: white;
+}
+
+#summary:hover{
+  background-color: #5c6975;
+}
+
+#reset{
+  margin: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  background-color: #C4BDAC;
+  border: 5px solid white;
+  cursor: pointer;
+  color: white;
+}
+
+#reset:hover{
+  background-color: #b9b3a7;
+}
+
+@keyframes disappear{
+  0%{
+    opacity: 1;
+    max-height: 500px;
+  }
+  100%{
+    opacity: 0;
+    max-height: 0;
+  }
+}
