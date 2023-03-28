@@ -2,6 +2,7 @@ var pointsA = 0;
 var pointsB = 0;
 let pointsArray = [0,0]
 
+/*
 function counter(that,number){
   let parent = that.parentNode.parentNode;
   pointsArray[number]++;
@@ -9,6 +10,14 @@ function counter(that,number){
   parent.classList.add("hidden")
   // document.getElementById(number).style.display = "none";
 }
+*/
+
+function counterA(number){
+  pointsA++;
+  console.log("A" + pointsA);
+  document.getElementById(number).style.display = "none";
+}
+
   /*
   document.querySelector("")
   document.querySelector("#Q1").style.display = "none";
@@ -27,7 +36,7 @@ function counter(that,number){
 */
 
 function counterB(number){
-  pointsB++
+  pointsB++;
   console.log("B" + pointsB);
   document.getElementById(number).style.display = "none";
 }
